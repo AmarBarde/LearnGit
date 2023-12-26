@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a user interface</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            background-color: aqua;
+            justify-content: space-evenly;
+            
+        }
+        h1{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        form{
+            background-color: rgba(128, 114, 114, 0.409);
+            border: 2px solid rgba(128, 128, 128, 0.365);
+            color: rgb(25, 24, 24);
+            font: bold;
+            font-size: 1.5rem;
+        }
+        table{
+            width: 80%;
+            color: rgb(10, 1, 1);
+            font-size: 1.4rem;
+        }
+
+        th, td{
+            border: red solid;
+            background-color: green;
+            font-size: large;
+            font-weight: bolder;
+            margin: 5px;
+        }
+        input{
+            border: 0px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body> 
+    <h1> "School Data" </h1><br>
+    <div class="container">
+        <form>
+            <label for="teacher">Teacher Name</label><br>
+            <input type="text" placeholder="Enter Teacher's name" id="name"><br>
+
+            <label for="teacher">Teacher ID</label><br>
+            <input type="text" placeholder="Enter Teacher's name" id="id"><br>
+
+            <label for="teacher">subject</label><br>
+            <input type="text" placeholder="Enter Teacher's name" id="subject"><br>
+
+            <label for="teacher">Qualification</label><br>
+            <input type="text" placeholder="Enter Teacher's name" id="qualification"><br><br>
+
+            <input type="submit" id="btn">
+        </form>
+
+        <table>
+            <thead>
+               <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Subject</th>
+                <th>Qualification</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+                <!-- this is js body -->
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
+
+<script src="ui.js"> 
+
+</script>
