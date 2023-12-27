@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    localStorage.setItem('name','Amar')
+    localStorage.setItem('surname','Barde')
+    var name = localStorage.getItem('name')
+    var surname = localStorage.getItem('surname')
+    console.log(name)
+    console.log(surname)
+    /*localStorage.removeItem('name')
+    localStorage.removeItem('surname')*/
+
+    /*localStorage.clear()*/
+    let arr = [ 1,"babu","bhaiya","raju"]
+
+ /* JSON.stringify(arr) */
+    localStorage.setItem('array',JSON.stringify(arr))
+
+
+    const userData = {
+        name : 'Amar',
+        age : 1000,
+        isAdmin : true 
+    }
+    /* JSON.stringify(userData)*/
+    localStorage.setItem('data',JSON.stringify(userData))
+  
+
+</script>
