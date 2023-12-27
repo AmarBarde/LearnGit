@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>this is a user interface</title>
+    
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
         .container{
             display: flex;
-            background-color: aqua;
+           
             justify-content: space-evenly;
             
         }
-        
         h1{
             font-size: 2rem;
             font-weight: bold;
@@ -33,6 +34,7 @@
             width: 80%;
             color: rgb(10, 1, 1);
             font-size: 1.4rem;
+            
         }
 
         th, td{
@@ -41,6 +43,7 @@
             font-size: large;
             font-weight: bolder;
             margin: 5px;
+            text-align: center;
         }
         input{
             border: 0px;
@@ -52,6 +55,7 @@
 <body> 
     <h1> "School Data" </h1><br>
     <div class="container">
+        
         <form>
             <label for="teacher">Teacher Name</label><br>
             <input type="text" placeholder="Enter Teacher's name" id="name"><br>
@@ -63,10 +67,12 @@
             <input type="text" placeholder="Enter Teacher's name" id="subject"><br>
 
             <label for="teacher">Qualification</label><br>
-            <input type="text" placeholder="Enter Teacher's name" id="qualification"><br><br>
+            <input type="text" placeholder="Enter Teacher's name" id="qualification"><br>
 
             <input type="submit" id="btn">
+
         </form>
+       
 
         <table>
             <thead>
@@ -83,7 +89,7 @@
             </tbody>
         </table>
 
-    </div>
+  </div>  
 </body>
 </html>
 

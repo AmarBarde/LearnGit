@@ -27,6 +27,8 @@ form.addEventListener("submit", data)
         ui.push(object)
         console.log(ui);
         Display(ui)
+
+        document.querySelector("form").reset();
     }
       function  Display(ui){
         document.querySelector("tbody").innerHTML = "";
@@ -51,10 +53,21 @@ form.addEventListener("submit", data)
 
             Delete.addEventListener("click", function(event){
                 event.target.parentNode.remove()
+
+
             })
 
             tr.append(name, id, subject, quali, Delete,);
             document.querySelector("tbody").append(tr); 
+
+            name.onmouseover = function(){
+                name.style.fontSize = "1.4rem"
+
+            }
+            name.onmouseleave = function(){
+                name.style.fontSize = "1rem"
+                
+            }
         });
       }
 
